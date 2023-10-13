@@ -17,7 +17,6 @@
     <div id="loading"
         class="min-vh-100 d-flex justify-content-center align-items-center bg-color position-fixed top-0 start-0 z-4 w-100">
         <img src="./assets/images/logo-header.png" alt="loading">
-
     </div>
     <header id="home">
         <section class="bg-color position-fixed w-100 z-3 top-0 ">
@@ -56,7 +55,6 @@
                 </div>
             </nav>
         </section>
-
         <div class="min-vh-100">
             <div class="flex-grow-1 d-flex align-items-center justify-content-center bg-image">
                 <div class="container">
@@ -72,7 +70,7 @@
         <img src="./assets/images/elipse-2.png" alt="elipse-2" class="position-absolute elipse-2 overflow-hidden">
         <div class="container position-relative z-1">
             <div class="text-center pt-3">
-                <h2 class="ff-poppins fs-1lg fw-700 pt-5 ">Why Choose Us?</h2>
+                <h2 class="ff-poppins fs-lg fw-700 pt-5 ">Why Choose Us?</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="10" viewBox="0 0 36 10" fill="none">
                     <circle cx="5" cy="5" r="5" fill="url(#paint0_linear_2_10531)" />
                     <circle cx="18" cy="5" r="5" fill="url(#paint1_linear_2_10531)" />
@@ -621,7 +619,7 @@
                 </defs>
             </svg>
         </div>
-        <div class="container-1 mla pt-5 z-n1 mb140 overflow-hidden ">
+        <div class="container-1 mla pt-5 z-n1 mb140 overflow-hidden h-lg-100">
             <div class="position-relative">
                 <img src="./assets/images/service-e1.png" alt="service-e1" class="position-absolute service1 z-n1">
             </div>
@@ -643,7 +641,7 @@
                 <div class="col-lg-6 col-12 pb-5">
                     <img src="./assets/images/box-image.png" alt="image1" class="w-100">
                 </div>
-                <span class="max-1774 position-absolute z-n1 end-0 color-grey-1 rounded-5 rounded-end w-100"></span>
+                <span class="max-1774 position-absolute z-n1 end-0  rounded-5 rounded-end w-100"></span>
             </div>
         </div>
 
@@ -841,7 +839,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <section class="position-relative mb140">
@@ -852,14 +849,11 @@
         <div class="container pt-5">
             <div class="last-box d-flex flex-column justify-content-center gap-4 ps-4 px-4">
                 <div class="d-flex flex-column align-items-center">
-                    <h5 class="ff-poppins fs-2lg fw-700 news-text max-915 text-center m-0 pt-5 mt-5">NEWSLETTER</h5>
+                    <h5 class="ff-poppins fs-2lg fw-700 translateY news-text max-915 text-center mb_5">NEWSLETTER</h5>
                 </div>
-                <div class="d-flex gap-3 translate align-items-center justify-content-center flex-lg-row flex-column">
-                    <div class="email-box d-flex align-items-center email-box ps-4 ">
-                        <input type="text"
-                            class="outine-none border-0 ff-poppins outline-0  fs-md fw-400 color-black opacity-75 pr-5 "
-                            placeholder="Enter Your E-mail Here ">
-                    </div>
+                <div class="d-flex gap-3  align-items-center justify-content-center flex-lg-row flex-column  transform">
+                    <input type="text" placeholder="Enter Your E-mail Here"
+                        class="outine-none ps-4 email-box border-0 ff-poppins outline-0  fs-md fw-400 color-black opacity-75 pe-3 w-100">
                     <button class="btn1  ff-poppins fs-1sm fw-500 color-white">Subscribe</button>
                 </div>
             </div>
@@ -966,11 +960,11 @@
                 </div>
             </div>
         </div>
-        <svg class="w-100 mb-2" xmlns="http://www.w3.org/2000/svg" width="1920" height="2" viewBox="0 0 1920 2"
-            fill="none">
+        <svg class="w-100 " xmlns="http://www.w3.org/2000/svg" width="1920" height="2" viewBox="0 0 1920 2" fill="none">
             <path d="M0 1L1920 1.00017" stroke="white" />
         </svg>
-        <p class="ff-poppins fs-sm fw-400 pb-4 pt-2  text-center color-white opacity-75">Copyright © Deco Master , 2021.
+        <p class="ff-poppins fs-sm fw-400 pb-4 pt-3 m-0  text-center color-white opacity-75">Copyright © Deco Master ,
+            2021.
         </p>
 
     </footer>
@@ -987,6 +981,40 @@
             preloader.classList.add("overflow-hidden")
         }, 1000)
 
+    </script>
+    <button id="backtoTop" onclick="GoToTop()" class="back-to-top">
+        <svg class="rotate" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <g clip-path="url(#clip0_2_6421)">
+                <path
+                    d="M16.4648 14.9999L10.2773 8.81242L12.0448 7.04492L19.9998 14.9999L12.0448 22.9549L10.2773 21.1874L16.4648 14.9999Z"
+                    fill="#FF5300" />
+            </g>
+            <defs>
+                <clipPath id="clip0_2_6421">
+                    <rect width="30" height="30" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+
+    </button>
+    <script>
+        const backtotop = document.getElementById("backtoTop");
+
+
+
+        window.addEventListener(('scroll'), () => {
+            if (window.scrollY > 200) {
+                backtotop.style.display = "block"
+            }
+            else {
+                backtotop.style.display = "none"
+            }
+        })
+
+
+        function GoToTop() {
+            scrollTo(0, 0)
+        }
     </script>
 </body>
 
